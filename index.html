@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<script src="js/scripts.js" defer></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="navigation">
+				<div class="navigation__logo logo">
+					<h1 class="logo__title">Marketplace</h1>
+				</div>
+				<div class="navigation__wrapper-seacrh seacrh-bar">
+					<form action="" class="seacrh-bar__form">
+						<div class="seacrh-bar__img">
+							<img src="img/search-icon.svg" alt="">
+						</div>
+						<input type="text" class="seacrh-bar__input" placeholder="search for a product, flower, etc">
+					</form>
+				</div>
+				<div class="navigation__wrapper-checkbox checkbox-group">
+					<form action="" class="checkbox-group__form">
+						<label class="checkbox-group__label checkbox checkbox-active">
+							<img class="checkbox__image" src="img/plant-icon.svg" alt="">
+							<input type="checkbox" class="checkbox__control" onclick="toggleCheckbox(this)" id="">
+							<span class="checkbox__text">Buds</span>
+						</label>
+						<label class="checkbox-group__label checkbox">
+							<img class="checkbox__image" src="img/plant-icon.svg" alt="">
+							<input type="checkbox" class="checkbox__control" onclick="toggleCheckbox(this)" id="">
+							<span class="checkbox__text">Edible</span>
+						</label>
+						<label class="checkbox-group__label checkbox">
+							<img class="checkbox__image" src="img/plant-icon.svg" alt="">
+							<input type="checkbox" class="checkbox__control" onclick="toggleCheckbox(this)" id="">
+							<span class="checkbox__text">Non Edible</span>
+						</label>
+						<label class="checkbox-group__label checkbox">
+							<img class="checkbox__image" src="img/plant-icon.svg" alt="">
+							<input type="checkbox" class="checkbox__control" onclick="toggleCheckbox(this)" id="">
+							<span class="checkbox__text">Concentrate</span>
+						</label>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<section class="options">
+			<div class="container">
+				<div class="options__wrapper">
+					<div class="options__inner">
+						<div class="container__slider">
+							<!-- Первый слайдер -->
+							<div class="range__slider-title">Price Range</div>
+							<div class="range-slider slider-price">
+								<div class="progress"></div>
+								<input type="range" class="range-min" min="0" max="9999" value="0">
+								<div class="tooltip-min tooltip">0 $</div>
+								<input type="range" class="range-max" min="0" max="9999" value="9999">
+								<div class="tooltip-max tooltip">9999 $</div>
+							</div>
+							<div class="number__wrapper">
+								<div class="min-value numberVal">
+									<input type="number" min="0" max="9999" value="0">
+								</div>
+								<div class="max-value numberVal">
+									<input type="number" min="0" max="9999" value="9999">
+								</div>
+							</div>
+						</div>
+						
+						<div class="container__slider">
+							<!-- Второй слайдер -->
+							<div class="container__slider container__slider-thc">
+								<div class="range__slider-title">THC, %</div>
+								<div class="range-slider slider-thc">
+									<div class="progress"></div>
+									<input type="range" class="range-max" min="0" max="100" value="65">
+									<div class="tooltip-max tooltip">65 %</div>
+								</div>
+								<div class="number__wrapper">
+									<div class="max-value numberVal">
+										<input type="number" min="0" max="100" value="65">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="container__slider ">
+							<!-- Второй слайдер -->
+							<div class="container__slider container__slider-thc">
+								<div class="range__slider-title">CBD, %</div>
+								<div class="range-slider slider-cbd">
+									<div class="progress"></div>
+									<input type="range" class="range-max" min="0" max="100" value="65">
+									<div class="tooltip-max tooltip">65 %</div>
+								</div>
+								<div class="number__wrapper">
+									<div class="max-value numberVal">
+										<input type="number" min="0" max="100" value="65">
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="nose__inner">
+							<h2 class="nose__title">Nose</h2>
+							<div class="nose__wrapper">
+								<label>
+									<input class="nose__radio nose__radio--color0" type="radio" name="noseValue" value="option0">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color1" type="radio" name="noseValue" value="option1">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color2" type="radio" name="noseValue" value="option2">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color3" type="radio" name="noseValue" value="option3">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color4" type="radio" name="noseValue" value="option4">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color5" type="radio" name="noseValue" value="option5">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color6" type="radio" name="noseValue" value="option6">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color7" type="radio" name="noseValue" value="option7">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color8" type="radio" name="noseValue" value="option8">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color9" type="radio" name="noseValue" value="option9">
+								</label>
+								<label>
+									<input class="nose__radio nose__radio--color10" type="radio" name="noseValue" value="option10">
+								</label>
+							</div>
+							<div class="nose__value-wrapper">
+								<span class="nose__value-min">min</span>
+								<span class="nose__value-max">max</span>
+							</div>
+						</div>
+					</div>	
+					<div class="options__setting sort">
+						<div class="sort__button">
+							<img src="img/sort-icon.svg" alt="">
+						</div>
+						<div class="sort__wrapper">
+							<div class="sort__title">Sort by :</div>
+							<ul class="sort__list">
+								<li class="sort__item">
+									<img class="sort__img" src="img/date-icon.svg" alt="">
+									<p class="sort__description">Date (New first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/date-icon.svg" alt="">
+									<p class="sort__description">Date (Old first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/arrow-icon.svg" alt="">
+									<p class="sort__description">Price (High first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img sort__img--reversed" src="img/arrow-icon.svg" alt="">
+									<p class="sort__description">Price (Low first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/thc-arrow-green-icon.png" alt="">
+									<p class="sort__description">Total THC (High first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/htc-arrow-red-icon.png" alt="">
+									<p class="sort__description">Total THC (Low first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/cbd-arrow-green-icon.png" alt="">
+									<p class="sort__description">Total CBD (High first)</p>
+								</li>
+								<li class="sort__item">
+									<img class="sort__img" src="img/cbd-arrow-red-icon.png" alt="">
+									<p class="sort__description">Total CBD (Low first)</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="parameters">
+			<div class="container">
+				<div class="parameters__result result">
+					<h3 class="result__title">1034,5 Results</h3>
+					<div class="result__wrapper">
+						<div class="result__button">
+							<p>100% Indica</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button" >
+							<p>100% Sativa</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>>50% Indica</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>>50% Sativa</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Indoor</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Outdoor</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Greenhouse</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Light Deprivation</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Mixed Light</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Other</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Flower</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Pre-Roll Flower</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Pre-Roll Infused</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Pre-Roll Leaf</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Shake</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Smalls</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Trim</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Shake</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Keef</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+						<div class="result__button">
+							<p>Fresh Frozen</p>
+							<img src="img/close-icon.svg" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="parameters__select">
+					<div class="parameters__classification classification">
+						<div class="parameters__title-wrapper classification__title-wrapper">
+							<h3 class="parameters__title classification__title">Classification</h3>
+							<svg class="parameters__icon classification__icon " data-target="list1" width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.9375 0.500001C7.04807 0.499877 7.15757 0.522104 7.25971 0.565404C7.36185 0.608704 7.45463 0.672225 7.5327 0.752316L12.7002 6.0395C12.854 6.20184 12.9392 6.41953 12.9375 6.64558C12.9357 6.87163 12.8472 7.08792 12.6909 7.24777C12.5347 7.40761 12.3232 7.4982 12.1023 7.49997C11.8813 7.50175 11.6685 7.41458 11.5098 7.25726L6.9375 2.57896L2.36518 7.25726C2.20649 7.41458 1.99369 7.50175 1.77272 7.49997C1.55175 7.49819 1.34032 7.40761 1.18407 7.24776C1.02782 7.08792 0.939264 6.87163 0.937527 6.64558C0.935789 6.41953 1.021 6.20184 1.17478 6.0395L6.3423 0.752316C6.42038 0.672225 6.51315 0.608704 6.61529 0.565404C6.71744 0.522104 6.82693 0.499877 6.9375 0.500001Z"
+									fill="#959595" />
+							</svg>
+						</div>
+						<ul class="parameters__list classification__list " data-id="list1">
+							<li class="parameters__item classification__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" checked>
+									<p class="parameters__description description--active">100% Indica</p>
+								</label>
+							</li>
+							<li class="parameters__item classification__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" >
+									<p class="parameters__description description--inactive">>100% Sativa</p>
+								</label>
+							</li>
+							<li class="parameters__item classification__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" checked>
+									<p class="parameters__description description--active">>50% Indica</p>
+								</label>
+							</li>
+							<li class="parameters__item classification__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" >
+									<p class="parameters__description description--inactive">>50% Sativa</p>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="parameterst__production production">
+						<div class="parameters__title-wrapper production__title-wrapper">
+							<h3 class="parameters__title production__title">Production Method</h3>
+							<svg class="parameters__icon production__icon" data-target="list2" width="13" height="8" viewBox="0 0 13 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.9375 0.500001C7.04807 0.499877 7.15757 0.522104 7.25971 0.565404C7.36185 0.608704 7.45463 0.672225 7.5327 0.752316L12.7002 6.0395C12.854 6.20184 12.9392 6.41953 12.9375 6.64558C12.9357 6.87163 12.8472 7.08792 12.6909 7.24777C12.5347 7.40761 12.3232 7.4982 12.1023 7.49997C11.8813 7.50175 11.6685 7.41458 11.5098 7.25726L6.9375 2.57896L2.36518 7.25726C2.20649 7.41458 1.99369 7.50175 1.77272 7.49997C1.55175 7.49819 1.34032 7.40761 1.18407 7.24776C1.02782 7.08792 0.939264 6.87163 0.937527 6.64558C0.935789 6.41953 1.021 6.20184 1.17478 6.0395L6.3423 0.752316C6.42038 0.672225 6.51315 0.608704 6.61529 0.565404C6.71744 0.522104 6.82693 0.499877 6.9375 0.500001Z"
+									fill="#959595" />
+							</svg>
+						</div>
+						<ul class="production__list parameters__list" data-id="list2">
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" checked>
+									<p class="parameters__description description--active">Indoor</p>
+								</label>
+							</li>
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox">
+									<p class="parameters__description description--inactive">Outdoor</p>
+								</label>
+							</li>
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox">
+									<p class="parameters__description description--inactive">Greenhouse</p>
+								</label>
+							</li>
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox">
+									<p class="parameters__description description--inactive">Light Deprivation</p>
+								</label>
+							</li>
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox">
+									<p class="parameters__description description--inactive">Mixed Light</p>
+								</label>
+							</li>
+							<li class="parameters__item production__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox">
+									<p class="parameters__description description--inactive">Other</p>
+								</label>
+							</li>
+						</ul>
+					</div>
+
+					<div class="parameters__size">
+						<div class="parameters__title-wrapper size__title-wrapper">
+							<h3 class="parameters__title size__title">Size</h3>
+							<svg class="size__icon parameters__icon" data-target="list3" width="13" height="8" viewBox="0 0 13 8" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M6.9375 0.500001C7.04807 0.499877 7.15757 0.522104 7.25971 0.565404C7.36185 0.608704 7.45463 0.672225 7.5327 0.752316L12.7002 6.0395C12.854 6.20184 12.9392 6.41953 12.9375 6.64558C12.9357 6.87163 12.8472 7.08792 12.6909 7.24777C12.5347 7.40761 12.3232 7.4982 12.1023 7.49997C11.8813 7.50175 11.6685 7.41458 11.5098 7.25726L6.9375 2.57896L2.36518 7.25726C2.20649 7.41458 1.99369 7.50175 1.77272 7.49997C1.55175 7.49819 1.34032 7.40761 1.18407 7.24776C1.02782 7.08792 0.939264 6.87163 0.937527 6.64558C0.935789 6.41953 1.021 6.20184 1.17478 6.0395L6.3423 0.752316C6.42038 0.672225 6.51315 0.608704 6.61529 0.565404C6.71744 0.522104 6.82693 0.499877 6.9375 0.500001Z"
+									fill="#959595" />
+							</svg>
+						</div>
+						<ul class="size__list parameters__list" data-id="list3">
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" checked>
+									<p class="parameters__description description--active">Flower</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Pre-Roll Flower</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Pre-Roll Infused</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Pre-Roll Leaf</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Shake</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Smalls</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Trim</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Shake</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Keef</p>
+								</label>
+							</li>
+							<li class="parameters__item size__item">
+								<label>
+									<input class="parameters__checkbox" type="checkbox" name="" id="">
+									<p class="parameters__description description--inactive">Fresh Frozen</p>
+								</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+</body>
+</html>
